@@ -7,7 +7,7 @@ import { Register } from "./components/Register";
 import { useUser } from "./context/UserContext";
 
 // axios.defaults.baseURL = "http://localhost:4000/api";
-axios.defaults.baseURL = "https://backend-psi-ten.vercel.app/api";
+axios.defaults.baseURL = "https://backendloginregister.vercel.app/api";
 
 function App() {
   const { user } = useUser();
