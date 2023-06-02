@@ -9,8 +9,9 @@ export const Nav = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <NavLink to="/" className="navbar-brand">
-          Inicio
+          Inicio, editor empleados
         </NavLink>
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -27,7 +28,7 @@ export const Nav = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/employees">
-                  <i className="fas fa-user"> Bienvenido {user.name}</i>
+                  <i className="fas fa-user"> Bienvenide {user.name}</i>
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -45,8 +46,19 @@ export const Nav = () => {
                   <i className="fas fa-user-plus"> Registrarme</i>
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/empleade">
+                  <i className="fas fa-user"> Inicio empleadee</i>
+                </NavLink>
+              </li>
+
+              
+
             </ul>
           </div>
+
+          
         )}
       </div>
     </nav>

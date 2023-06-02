@@ -1,10 +1,12 @@
 import axios from "axios";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Employees } from "./components/Employees";
+import { Empleade } from "./components/Empleade";
 import { Login } from "./components/Login";
 import { Nav } from "./components/Nav";
 import { Register } from "./components/Register";
 import { useUser } from "./context/UserContext";
+
 
 // axios.defaults.baseURL = "http://localhost:4000/api";
 axios.defaults.baseURL = "https://backendloginregister.vercel.app/api";
@@ -33,6 +35,7 @@ function App() {
             </Public>
           }
         />
+
         <Route
           path="/register"
           element={
@@ -41,6 +44,16 @@ function App() {
             </Public>
           }
         />
+
+        <Route
+          path="/empleade"
+          element={
+            <Public>
+              <Empleade />
+            </Public>
+          }
+        />
+
         <Route
           path="/employees"
           element={
@@ -49,6 +62,7 @@ function App() {
             </Private>
           }
         />
+        
       </Routes>
     </BrowserRouter>
   );
